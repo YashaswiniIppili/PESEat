@@ -107,10 +107,10 @@ CREATE TABLE `restaurant` (
 
 
 INSERT INTO `restaurant` (`rs_id`, `c_id`, `title`, `email`, `phone`, `url`, `o_hr`, `c_hr`, `o_days`, `address`, `image`, `date`) VALUES
-(1, 1, 'North Street Tavern', 'nthavern@mail.com', '3547854700', 'www.northstreettavern.com', '8am', '9pm', 'mon-sat', 'Jayanagar, Bangalore', '6290877b473ce.jpg', '2023-05-27 08:10:35'),
+(1, 1, 'North Street Tavern', 'nthavern@mail.com', '3547854700', 'www.northstreettavern.com', '8am', '9pm', 'mon-sat', 'Jayanagar Bangalore', '6290877b473ce.jpg', '2023-05-27 08:10:35'),
 (2, 2, 'Eataly', 'eataly@gmail.com', '0557426406', 'www.eataly.com', '11am', '9pm', 'Mon-Sat', 'Banashankari II stage, Bangalore', '606d720b5fc71.jpg', '2023-05-27 08:06:41'),
-(3, 3, 'Chinese Mainland', 'chnmnld@mail.com', '1458745855', 'www.nanxiangbao45.com', '9am', '10pm', 'mon-sat', 'JP Nagar, Bangalore', '6290860e72d1e.jpg', '2023-05-27 08:04:30'),
-(4, 4, 'Highlands Bar & Grill', 'hbg@mail.com', '6545687458', 'www.hbg.com', '7am', '9pm', 'mon-sat', 'MG Road, Bangalore', '6290af6f81887.jpg', '2023-05-27 11:01:03');
+(3, 3, 'Chinese Mainland', 'chnmnld@mail.com', '1458745855', 'www.nanxiangbao45.com', '9am', '10pm', 'mon-sat', 'JP Nagar Bangalore', '6290860e72d1e.jpg', '2023-05-27 08:04:30'),
+(4, 4, 'Highlands Bar & Grill', 'hbg@mail.com', '6545687458', 'www.hbg.com', '7am', '9pm', 'mon-sat', 'MG Road Bangalore', '6290af6f81887.jpg', '2023-05-27 11:01:03');
 
 
 CREATE TABLE `res_category` (
@@ -144,12 +144,12 @@ CREATE TABLE `users` (
 /* insert into `users` */
 
 INSERT INTO `users` (`u_id`, `username`, `f_name`, `l_name`, `email`, `phone`, `password`, `address`, `status`, `date`) VALUES
-(1, 'eric', 'Eric', 'Lopez', 'eric@mail.com', '1458965547', 'a32de55ffd7a9c4101a0c5c8788b38ed', '87 Armbrester Drive', 1, '2022-05-27 08:40:36'),
-(2, 'harry', 'Harry', 'Holt', 'harryh@mail.com', '3578545458', 'bc28715006af20d0e961afd053a984d9', '33 Stadium Drive', 1, '2022-05-27 08:41:07'),
-(3, 'james', 'James', 'Duncan', 'james@mail.com', '0258545696', '58b2318af54435138065ee13dd8bea16', '67 Hiney Road', 1, '2022-05-27 08:41:37'),
-(4, 'christine', 'Christine', 'Moore', 'christine@mail.com', '7412580010', '5f4dcc3b5aa765d61d8327deb882cf99', '114 Test Address', 1, '2022-05-01 05:14:42'),
-(5, 'scott', 'Scott', 'Miller', 'scott@mail.com', '7896547850', '5f4dcc3b5aa765d61d8327deb882cf99', '63 Charack Road', 1, '2022-05-27 10:53:51'),
-(6, 'liamoore', 'Liam', 'Moore', 'liamoore@mail.com', '7896969696', '5f4dcc3b5aa765d61d8327deb882cf99', '122 Bleck Street', 1, '2022-05-27 12:57:00');
+(1, 'eric', 'Eric', 'Lopez', 'eric@mail.com', '1458965547', 'a32de55ffd7a9c4101a0c5c8788b38ed', 'Jayanagar 4th Block', 1, '2022-05-27 08:40:36'),
+(2, 'harry', 'Harry', 'Holt', 'harryh@mail.com', '3578545458', 'bc28715006af20d0e961afd053a984d9', 'Banashankari 2nd stage', 1, '2022-05-27 08:41:07'),
+(3, 'james', 'James', 'Duncan', 'james@mail.com', '0258545696', '58b2318af54435138065ee13dd8bea16', 'Rajajinagar 2nd Block', 1, '2022-05-27 08:41:37'),
+(4, 'christine', 'Christine', 'Moore', 'christine@mail.com', '7412580010', '5f4dcc3b5aa765d61d8327deb882cf99', 'Peenya 4th cross', 1, '2022-05-01 05:14:42'),
+(5, 'scott', 'Scott', 'Miller', 'scott@mail.com', '7896547850', '5f4dcc3b5aa765d61d8327deb882cf99', 'Malleshwaram 18th cross', 1, '2022-05-27 10:53:51'),
+(6, 'liamoore', 'Liam', 'Moore', 'liamoore@mail.com', '7896969696', '5f4dcc3b5aa765d61d8327deb882cf99', 'Whitefield', 1, '2022-05-27 12:57:00');
 
 
 CREATE TABLE `users_orders` (
@@ -165,15 +165,15 @@ CREATE TABLE `users_orders` (
 /* insert into `users_orders` */
 
 INSERT INTO `users_orders` (`o_id`, `u_id`, `title`, `quantity`, `price`, `status`, `date`) VALUES
-(1, 4, 'Spring Rolls', 2, '6.00', 'rejected', '2022-05-27 11:43:26'),
-(2, 4, 'Prawn Crackers', 1, '7.00', 'closed', '2022-05-27 11:11:41'),
-(3, 5, 'Chicken Madeira', 1, '23.00', 'closed', '2022-05-27 11:42:35'),
-(4, 5, 'Cheesy Mashed Potato', 1, '5.00', 'in process', '2022-05-27 11:42:55'),
-(5, 5, 'Meatballs Penne Pasta', 1, '10.00', 'closed', '2022-05-27 13:18:03'),
-(6, 5, 'Yorkshire Lamb Patties', 1, '14.00', NULL, '2022-05-27 11:40:51'),
-(7, 6, 'Yorkshire Lamb Patties', 1, '14.00', 'closed', '2022-05-27 13:04:33'),
-(8, 6, 'Lobster Thermidor', 1, '36.00', 'closed', '2022-05-27 13:05:24'),
-(9, 6, 'Stuffed Jacket Potatoes', 1, '8.00', 'rejected', '2022-05-27 13:03:53');
+(1, 4, 'Spring Rolls', 2, '100.00', 'rejected', '2022-05-27 11:43:26'),
+(2, 4, 'Prawn Crackers', 1, '370.00', 'closed', '2022-05-27 11:11:41'),
+(3, 5, 'Chicken Madeira', 1, '230.00', 'closed', '2022-05-27 11:42:35'),
+(4, 5, 'Cheesy Mashed Potato', 1, '210.00', 'in process', '2022-05-27 11:42:55'),
+(5, 5, 'Meatballs Penne Pasta', 1, '380.00', 'closed', '2022-05-27 13:18:03'),
+(6, 5, 'Yorkshire Lamb Patties', 1, '400.00', NULL, '2022-05-27 11:40:51'),
+(7, 6, 'Yorkshire Lamb Patties', 1, '400.00', 'closed', '2022-05-27 13:04:33'),
+(8, 6, 'Lobster Thermidor', 1, '420.00', 'closed', '2022-05-27 13:05:24'),
+(9, 6, 'Stuffed Jacket Potatoes', 1, '290.00', 'rejected', '2022-05-27 13:03:53');
 
 
 ALTER TABLE `admin`
