@@ -108,7 +108,7 @@ session_start();
                 </div>
                 <div class="row">
 						<?php 					
-						$query_res= mysqli_query($db,"select * from dishes LIMIT 6"); 
+						$query_res= mysqli_query($db,"select * from dishes LIMIT 3"); 
                                 while($r=mysqli_fetch_array($query_res))
                                 {
                                         
