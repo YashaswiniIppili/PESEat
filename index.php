@@ -104,7 +104,7 @@ session_start();
             <div class="container">
                 <div class="title text-xs-center m-b-30">
                     <h2>Popular Dishes of the Month</h2>
-                    <p class="lead">Easiest way to order your favourite food among these Top 6 dishes</p>
+                    <p class="lead">Easiest way to order your favourite food among these Top 3 dishes</p>
                 </div>
                 <div class="row">
 						<?php 					
