@@ -43,7 +43,7 @@ CREATE TABLE `dishes` (
   `title` varchar(222) NOT NULL,
   `slogan` varchar(222) NOT NULL,
   `price` decimal(10,2) NOT NULL,
-  `img` varchar(222),
+  `img` varchar(222)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
